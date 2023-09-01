@@ -1,0 +1,146 @@
+[
+    {
+        "key": "ctrl+alt+s",
+        "command": "workbench.action.openSettings"
+    },
+    {
+        "key": "ctrl+alt+f",
+        "command": "editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "editor.action.startFindReplaceAction",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "ctrl+shift+f",
+        "command": "workbench.action.findInFiles"
+    },
+    {
+        "key": "ctrl+shift+r",
+        "command": "workbench.action.replaceInFiles"
+    },
+    {
+        "key": "f12",
+        "command": "editor.action.goToImplementation",
+        "when": "editorHasImplementationProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "alt+left",
+        "command": "workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "alt+right",
+        "command": "workbench.action.navigateForward",
+        "when": "canNavigateForward"
+    },
+    {
+        "key": "ctrl+alt+up",
+        "command": "editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+down",
+        "command": "editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "f2",
+        "command": "editor.action.rename",
+        "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+up",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+down",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+y",
+        "command": "editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+z",
+        "command": "undo"
+    },
+    {
+        "key": "shift+ctrl+z",
+        "command": "redo"
+    },
+    {
+        "key": "ctrl+\\",
+        "command": "workbench.action.splitEditor"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "f5",
+        "command": "debug.openView",
+        "when": "!debuggersAvailable"
+    },
+    {
+        "key": "f5",
+        "command": "workbench.action.debug.start",
+        "when": "debuggersAvailable && debugState == 'inactive'"
+    },
+    {
+        "key": "f5",
+        "command": "workbench.action.debug.continue",
+        "when": "debugState == 'stopped'"
+    },
+    {
+        "key": "ctrl+f5",
+        "command": "debug.openView",
+        "when": "!debuggersAvailable"
+    },
+    {
+        "key": "f9",
+        "command": "editor.debug.action.toggleBreakpoint",
+        "when": "debuggersAvailable && editorTextFocus"
+    },
+    {
+        "key": "f10",
+        "command": "workbench.action.debug.stepOver",
+        "when": "debugState == 'stopped'"
+    },
+    {
+        "key": "f11",
+        "command": "workbench.action.debug.stepInto",
+        "when": "debugState != 'inactive'"
+    },
+    {
+        "key": "shift+f11",
+        "command": "workbench.action.debug.stepOut",
+        "when": "debugState == 'stopped'"
+    },
+    {
+        "key": "shift+ctrl+f5",
+        "command": "workbench.action.debug.restart",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "shift+f5",
+        "command": "workbench.action.debug.disconnect",
+        "when": "focusedSessionIsAttach && inDebugMode"
+    },
+    {
+        "key": "f2",
+        "command": "renameFile",
+        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    }
+]
